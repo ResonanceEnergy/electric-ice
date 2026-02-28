@@ -1,0 +1,26 @@
+{
+  "name": "arctic-electric-bots",
+  "version": "1.0.0",
+  "description": "Arctic Electric AI — Telegram & Discord bots for Resonance Energy Inc.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "telegram": "node index.js --telegram",
+    "discord": "node index.js --discord",
+    "deploy-commands": "node -e \"require('dotenv').config(); require('./discord/bot').deployCommands().then(() => process.exit(0))\"",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["arctic-electric", "telegram-bot", "discord-bot", "cleantech", "ai"],
+  "author": "Resonance Energy Inc.",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.5.0",
+    "telegraf": "^4.16.0"
+  }
+}

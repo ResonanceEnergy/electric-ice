@@ -1,0 +1,38 @@
+# ── Secrets & API Keys ───────────────────
+# Never commit OpenClaw config (contains API keys)
+.openclaw/
+openclaw.json
+*.env
+.env*
+!.env.example
+secrets/
+credentials/
+
+# ── OS Files ─────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ── IDE / Editor ─────────────────────────
+.vscode/settings.json
+.idea/
+*.code-workspace
+
+# ── Python ───────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Node.js ──────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ── Build Outputs ────────────────────────
+*.pdf
+figures_pdf/*.pdf
